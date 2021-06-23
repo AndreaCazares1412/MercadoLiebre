@@ -1,0 +1,374 @@
+/* HOME */
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    height: 100%;
+
+}
+
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+div.top-header{
+    display: flex;
+    padding: 5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo,
+header .form{
+    width: 600px;
+}
+
+header div.logo{
+    padding: 10px;
+}
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 10px;
+    justify-content: center;
+}
+header nav{
+    font-size: 12px;
+    display: none;
+}
+
+header ul li{
+    list-style-type: none;
+    padding: 5px;
+    display: inline-block;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    border: 0;
+    height: 17px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    color: #666;
+    width: 5%;
+    height: 17px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left:solid 2px rgb(99, 97, 97);
+
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+
+}
+/* Footer */
+footer {
+	text-align: center;
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+}
+footer article p strong{
+    color: rgb(19, 19, 19);
+    font-weight: bold;
+}
+footer article p{
+    color: rgb(104, 104, 104);
+}
+footer article{
+ padding: 40px;
+}
+
+
+.footerIcon {
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 10px;
+	color: #1259c3;
+}
+.copyright{
+    background-color: white;
+    color: rgb(104, 104, 104);
+    padding: 10px;
+}
+
+
+/* REGISTER */
+main{
+    margin:10px;
+}
+main form h4{
+    padding-left: 20px;
+}
+main form button{
+    text-align: right;
+}
+main form div{
+    display: flex;
+    margin: 20px;
+}
+main form input.control-info{
+    border: 0;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    padding: 10px;
+}
+main form input.control-select{
+    margin-right: 10px;
+}
+main form div.control-formulario-perfil-usuario{
+    display:inline-block;
+}
+
+ /* LOGIN */
+ section{
+     margin-bottom:auto;
+ }
+ section form{
+     padding: 10px;
+ }
+ section form p{
+     margin: 20px;
+     text-align: center;
+ }
+ section form input{
+        border: 0;
+        border-radius: 5px;
+        width: 90%;
+        height: 30px;
+        padding: 10px;
+        
+ }
+ section form button{
+     width: 90%;
+     padding: 10px;
+     background-color: #045ee6;
+     color: white;
+     border: 0;
+     border-radius: 5px
+     
+ }
+
+
+
+@media (min-width: 361px){
+    header nav ul{
+        display:none;
+    }  
+    main section article .description{
+        display: block;
+        opacity: 0%;
+        transition: opacity 450ms;
+    }
+    main section article .description:hover{
+        opacity:100%;
+    }
+    main section article{
+        transition: box-shadow 500ms;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+    .enviar{
+        opacity: 0.6;
+        transition: 0.3;
+    }
+    .enviar:hover{
+        background-color: #0022AA;
+        opacity: 1;
+        color: white;
+    }
+}
+
+@media (min-width: 769px){ 
+    div.top-header{
+        display: flex;
+        padding: 5%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-bottom: 10px ;
+    }  
+    
+    header div.logo{
+     width: 600px;
+    }
+
+    header div.top-header p{
+        width: 50%;
+        text-align: center;
+    }
+    div.burger-menu{
+        display: none;
+    }
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    header nav ul{
+        display:inline-block;
+        text-align: left;
+    }  
+    header nav ul.left-menu {
+        text-align: right;
+    }  
+    main section div.products article{
+        width: 22%;
+    }
+    /* REGISTER */
+
+    main form div.control-formulario-perfil-usuario{
+        display:inline-block;
+    }
+
+}
