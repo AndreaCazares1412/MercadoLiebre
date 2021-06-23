@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
 app.use(express.static('public'));
+const port = 3000;
 
 
 app.listen(3000, ()=>{
     console.log('Servidor funcionando');
 });
-
 app.listen(process.env.PORT || port, () =>
     console.log(`Servidor corriendo en puerto ${port}`)
 );
